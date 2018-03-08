@@ -1,0 +1,25 @@
+/* =================================
+  Import normalize.css
+	==================================== */
+@import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
+
+/* body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+/* {
+	box-sizing: border-box;
+} */
+
+p {
+  font-size: 16px;
+  padding: .25em;
+}
+
+a {
+  color: FloralWhite;
+  font-weight: bold;
+  text-decoration: none;
+}

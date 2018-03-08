@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<style>
+		* {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: Pink;
+		}
+		header {
+			background: DodgerBlue;
+			padding: .5em;
+		}
+		menu {
+			background: FireBrick;
+			padding: .25em;
+			position: absolute;
+			right: .5em;
+			/*float: right;*/
+		}
+		.AllContent {
+			background-color: LightGreen;
+			/*margin: 1em;*/
+			padding: 1em;
+		}
+		footer {
+			background: Coral;
+			padding: .5em;
+			text-align: center;
+		}
+
+		h1 {
+			background: SeaGreen;
+			padding: .25em;
+			font-size: 1.5em;
+			/*float: left;*/
+		}
+
+		ul {
+			background: BlueViolet;
+
+		}
+		ul li {
+			text-transform: uppercase;
+			padding: .25em;
+		}
+
+		h1,
+		menu,
+		ul,
+		ul li {
+			display: inline-block;
+		}
+
+		h1,
+		menu {
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Header</h1>
+		<menu>
+			<ul>
+				<li>Option1</l1>
+				<li>Option2</l1>
+				<li>Option3</l1>
+			</ul>
+		</menu>
+	</header>
+
+	<div class="AllContent">
+		<p>All Content</p>
+		<main>
+			<h1>Main</h1>
+		</main>
+	</div>
+
+	<footer>
+		<p>Footer</p>
+	</footer>
+</body>
+</html>
