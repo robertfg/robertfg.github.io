@@ -2,7 +2,6 @@
   Import normalize.css
 	==================================== */
 @import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
-/* @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'); */
 
 /* =================================
   Imported Fonts
@@ -51,11 +50,11 @@ menu {
   /* vertical-align: middle; */
   position: absolute;
   right: .5em;
+  background: red;
 }
 
 ul.main-nav {
-  margin: 0;
-  padding: 0;
+  background: blue;
 }
 
 h1.name,
@@ -93,8 +92,12 @@ ul.main-nav,
 /* ---- Layout Containers ----
 	-	header, footer, content divs	*/
 header {
+  /* background: #A5B1B5; */
+  /* background: #2380D1; */
 	background: linear-gradient(#04387B, #A19490);
 	color: FloralWhite;
+	/* color: DarkTurquoise;
+	color: SpringGreen; */
 	padding: .5em;
 }
 
@@ -137,7 +140,7 @@ footer {
   background-color: #FFFAF0;	/* FloralWhite */
   padding: 1em;
   /* min-height: 100vh; */
-  min-height: calc(100vh - 138px);  /* 68px x 2 */
+  min-height: calc(100vh - 134.8px);  /* 68px x 2 */
 }
 
 /* #AllContent::before {
