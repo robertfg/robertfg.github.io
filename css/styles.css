@@ -1,6 +1,6 @@
 /* =================================
   Import normalize.css
-	==================================== */
+==================================== */
 @import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
 /* @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'); */
 
@@ -21,12 +21,15 @@
 
 main h1 {
 	font-family: CelticHand, Garamond, serif;
-	font-size: 3em;
+	font-size: 1.6em;
+  color: #04387B;
 }
 
-p {
-  font-size: 16px;
+main p {
+  font-size: 1em;
+  font-weight: bold;
   line-height: 1.5em;
+  color: #04387B;
 }
 
 a {
@@ -36,9 +39,13 @@ a {
 }
 
 a:hover {
-	color: #04387B;
+  color: #FDB47D;
   padding-bottom: .25em;
-  border-bottom: 3px solid #04387B;
+  border-bottom: 3px solid #FDB47D;
+}
+
+img {
+  color: FloralWhite;
 }
 
 /* =================================
@@ -47,131 +54,275 @@ a:hover {
 
 /* ---- Navigation ----
 	-	menus, nav bars*/
-menu {
-  /* vertical-align: middle; */
-  position: absolute;
-  right: .5em;
-}
 
+/* This corrects a problem with Chrome adding extra margin and padding. */
+menu,
 ul.main-nav {
   margin: 0;
   padding: 0;
+  vertical-align: middle;
 }
 
-h1.name,
-menu,
-ul.main-nav,
-.main-nav li {
+.name,
+menu {
   display: inline-block;
 }
 
 .name {
-  font-size: 1.25em;
+  font-size: 1em;
+  margin-left: .5em;
 }
 
-.name a,
-.main-nav a {
-	text-align: center;
+.name a:hover {
+	color: #FDB47D;
+  padding-bottom: .25em;
+  border-bottom: 3px solid #FDB47D;
+}
+
+menu {
+  position: absolute;
+  top: 1.2em;
+  right: 1em;
+  text-align: right;
 }
 
 .main-nav {
+  display: none;
   color: FloralWhite;
   list-style-type: none;
+  position: absolute;
+  right: 0;
+  padding: .5em;
+  box-shadow: -10px 10px 10px -5px #877E7F;
 }
 
 .main-nav li {
-  padding: 0 1em;
-  text-transform: uppercase;
+  padding: .5em;
+  padding-right: 0;
 }
 
-.main-nav a:hover {
-	color: #E4B592;
-  padding-bottom: .25em;
-  border-bottom: 3px solid #E4B592;
+#hamburger_menu {
+  margin-bottom: .5em;
+}
+
+#hamburger_menu span {
+  display: block;
+  background: FloralWhite;
+  width: 20px;
+  height: 2px;
+  margin: .2em 0;
+}
+
+menu:hover .main-nav {
+  display: block;
 }
 
 /* ---- Layout Containers ----
 	-	header, footer, content divs	*/
 header {
-	background: linear-gradient(#04387B, #A19490);
+  background: #04387B;
 	color: FloralWhite;
 	padding: .5em;
 }
 
 main {
-  margin: auto;
+  background: url('../img/Ohio%20River%20Sunset%20-%20Faded.jpg') 10%;
+  background-color: FloralWhite;
+  min-height: calc(100vh - 244px);  /* banner + header + footer */
 }
 
 footer {
-  background: linear-gradient(to top, #2380D1, #E4B592);
-	/* background: #2380D1; */
+  background: linear-gradient(to top, #2380D1, #FDB47D);
 	color: FloralWhite;
-	padding: .5em;
+	padding: 1em;
 	text-align: center;
-  /* position: absolute;
-  top: 90%; */
+}
+
+footer p {
+  font-size: .9em;
 }
 
 .col {
-  background-color: #FFFAF0;
   display: inline-block;
-  float: left;
-  margin: 3em 2.5%;
-  padding: 0 2em;
-  height: 100%;
+  padding: .25em 1em;
 }
 
 .primary {
-  width: 35%;
+  width: 100%;
+  text-align: center;
 }
 
-.secondary,
-.tertiary {
-  width: 25%;
+/* Page Elements */
+.banner {
+  background: linear-gradient(#04387B, #877E7F);
+  height: 110px;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
 
-#AllContent {
-  margin: auto;
-  background: url('../img/Ohio River Sunset.jpg') 50%;
-  opacity: .6;
-  background-color: #FFFAF0;	/* FloralWhite */
-  padding: 1em;
-  /* min-height: 100vh; */
-  min-height: calc(100vh - 138px);  /* 68px x 2 */
-}
-
-/* #AllContent::before {
-  content: ' ';
+.pic {
   display: block;
-  position: absolute;
-  left: 0; */
-  /* top: 0; */
-  /* top: 66.8px;
-  width: 100%; */
-  /* height: 100%; */
-  /* height: calc(100vh - 134.8px);
-  z-index: 1;
-  opacity: .6;
-  background-image: url('../img/Ohio River Sunset.jpg');
-  background-repeat: no-repeat; */
-  /* background-position: 50% 0; */
-  /* background-size: cover;
-} */
+  margin: auto;
+  border: 3px solid #FDB47D;
+  border-radius: 50%;
+  height: 100px;
+}
 
-/* ---- Page Elements ----
-	-	logos, headlines, icons	*/
+.socialMedia a:hover {
+  border-bottom: 0;
+}
+
+.socialMedia img {
+  vertical-align: middle;
+  height: 25px;
+  margin: .25em;
+}
+
+#twitter {
+  height: 45px;
+}
+
+#email {
+  height: 40px;
+}
 
 
 /* =================================
   Media Queries
 ==================================== */
 
+/* Medium Screens */
+@media ( min-width: 500px ) {
 
+  /* Base Elements */
+  main h1 {
+  	font-size: 2em;
+  }
 
-/* ---- Float clearfix ---- */
+  main p {
+    font-size: 1.3em;
+  }
 
-.clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
+  /* Navigation */
+  .name {
+    font-size: 1.1em;
+    margin-left: .5em;
+  }
+
+  .main-nav {
+    display: inline-block;
+    position: relative;
+    padding: .5em;
+    box-shadow: none;
+  }
+
+  .main-nav li {
+    font-size: .9em;
+    padding: 0 .5em;
+    text-transform: uppercase;
+  }
+
+  .name,
+  menu,
+  .main-nav,
+  .main-nav li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #hamburger_menu {
+    display: none;
+  }
+
+  /* Layout Containers */
+  main {
+    min-height: calc(100vh - 318px);  /* banner + header + footer */
+  }
+
+  .col {
+    display: inline-block;
+    padding-top: 1.5em;
+  }
+
+  /* Page Elements */
+  .banner {
+    height: 180px;
+    padding: 20px;
+  }
+
+  .pic {
+    height: 140px;
+  }
+
+  .socialMedia img {
+    height: 30px;
+    margin: .25em;
+  }
+
+  #twitter {
+    height: 50px;
+  }
+
+  #email {
+    height: 45px;
+  }
+
+}
+
+/* Larger Screens */
+@media ( min-width: 1000px ) {
+
+  /* Base Elements */
+  main h1 {
+  	font-size: 2.5em;
+  }
+
+  main p {
+    font-size: 1.8em;
+  }
+
+  /* Navigation */
+  .name {
+    font-size: 1.25em;
+  }
+
+  .main-nav li {
+    font-size: 1em;
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+
+  /* Layout Containers */
+  main {
+    min-height: calc(100vh - 344px);  /* banner + header + footer */
+  }
+
+  .col {
+    padding-top: 2em;
+  }
+
+  /* Page Elements */
+  .banner {
+    height: 200px;
+    padding: 25px;
+  }
+
+  .pic {
+    height: 150px;
+  }
+
+  .socialMedia img {
+    height: 40px;
+    margin: .25em;
+  }
+
+  #twitter {
+    height: 60px;
+  }
+
+  #email {
+    height: 55px;
+  }
+
 }
