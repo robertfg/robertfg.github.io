@@ -1,7 +1,24 @@
 /* =================================
-   Functions
-==================================== */
+   Header and Footer
+================================= === */
+const header = document.getElementsByTagName('header');
+header[0].innerHTML = `
+  <h1 class="name"><a href="index.html">Robert Glover</a></h1>
+  <menu>
+    <div id="hamburger_menu"><span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span></div>
+    <ul class="main-nav">
+      <li id="li-index"><a href="index.html">Home</a></li>
+      <li id="li-projects"><a href="projects.html">Projects</a></li>
+      <li id="li-about"><a href="about.html">About</a></li>
+      <li id="li-contact"><a href="contact.html">Contact</a></li>
+    </ul>
+  </menu>
+`;
 
+const footer = document.getElementsByTagName('footer');
+footer[0].innerHTML = `
+  <p>Copyright &copy; <span id="thisYear"></span> Robert Glover</p>
+`;
 
 /* =================================
    Handle "hamburger" events

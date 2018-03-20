@@ -12,20 +12,27 @@
   src: url('fonts/CelticHand.ttf');
 }
 
-/* =================================
+/* *********************************************
   Base Element Styles
 ==================================== */
 * {
 	box-sizing: border-box;
 }
 
-main h1 {
+h1 {
 	font-family: CelticHand, Garamond, serif;
 	font-size: 1.6em;
   color: #04387B;
 }
 
-main p {
+h2 {
+	font-family: CelticHand, Garamond, serif;
+	font-size: 1.3em;
+  color: #04387B;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5em;
@@ -69,6 +76,7 @@ menu {
 }
 
 .name {
+  font-family: Helvetica, sans-serif;
   font-size: 1em;
   margin-left: .5em;
 }
@@ -101,6 +109,14 @@ menu {
   padding-right: 0;
 }
 
+/* Highlight active menu item */
+#index    #li-index    a,
+#projects #li-projects a,
+#about    #li-about    a,
+#contact  #li-contact  a {
+  color: #FDB47D;
+}
+
 #hamburger_menu {
   margin-bottom: .5em;
 }
@@ -128,7 +144,17 @@ header {
 main {
   background: url('../img/Ohio%20River%20Sunset%20-%20Faded.jpg') 10%;
   background-color: FloralWhite;
-  min-height: calc(100vh - 244px);  /* banner + header + footer */
+}
+
+/* Only the index page has the banner */
+#index    main {
+  min-height: calc(100vh - 228px);  /* banner + header + footer */
+}
+
+#projects main,
+#about    main,
+#contact  main {
+  min-height: calc(100vh - 118px);  /* header + footer */
 }
 
 footer {
@@ -139,17 +165,41 @@ footer {
 }
 
 footer p {
+  color: FloralWhite;
   font-size: .9em;
+  font-weight: normal;
+  line-height: 0;
 }
 
 .col {
-  display: inline-block;
-  padding: .25em 1em;
+  float: left;
+  padding: .5em 1em;
 }
 
-.primary {
+#index .primary,
+#projects .primary {
   width: 100%;
   text-align: center;
+}
+
+#about .primary,
+#projects .primary {
+  display: none;
+}
+
+.secondary {
+  padding: 0 1.5em;
+}
+
+.secondary p,
+.secondary ul {
+  font-size: .9em;
+}
+
+.secondary ul {
+  color: #04387B;
+  /* color: #2380D1; */
+  font-weight: bold;
 }
 
 /* Page Elements */
@@ -167,6 +217,10 @@ footer p {
   border: 3px solid #FDB47D;
   border-radius: 50%;
   height: 100px;
+}
+
+.pic2 {
+  display: none;
 }
 
 .socialMedia a:hover {
@@ -236,13 +290,35 @@ footer p {
   }
 
   /* Layout Containers */
-  main {
-    min-height: calc(100vh - 318px);  /* banner + header + footer */
+
+  /* Only the index page has the banner */
+  #index    main {
+    min-height: calc(100vh - 301px);  /* banner + header + footer */
+  }
+
+  #projects main,
+  #about    main,
+  #contact  main {
+    min-height: calc(100vh - 121px);  /* header + footer */
   }
 
   .col {
     display: inline-block;
     padding-top: 1.5em;
+  }
+
+  #projects .primary,
+  #about    .primary,
+  #contact  .primary {
+    /* display: inline-block; */
+    width: 40%;
+    padding-top: 3em;
+  }
+
+  #projects .secondary,
+  #about    .secondary,
+  #contact  .secondary {
+    width: 60%;
   }
 
   /* Page Elements */
@@ -253,6 +329,14 @@ footer p {
 
   .pic {
     height: 140px;
+  }
+
+  .pic2 {
+    display: inline;
+    width: 65%;
+    margin-bottom: .5em;
+    border: 10px solid #FDB47D;
+    border-radius: 10%;
   }
 
   .socialMedia img {
@@ -294,8 +378,16 @@ footer p {
   }
 
   /* Layout Containers */
-  main {
-    min-height: calc(100vh - 344px);  /* banner + header + footer */
+
+  /* Only the index page has the banner */
+  #index    main {
+    min-height: calc(100vh - 327px);  /* banner + header + footer */
+  }
+
+  #projects main,
+  #about    main,
+  #contact  main {
+    min-height: calc(100vh - 127px);  /* header + footer */
   }
 
   .col {
@@ -325,4 +417,12 @@ footer p {
     height: 55px;
   }
 
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }

@@ -1,0 +1,43 @@
+/* =================================
+  Additional Form Formatting
+==================================== */
+form {
+  color: #04387B;
+  font-weight: bold;
+  background: #FDB47D;
+}
+
+button {
+  padding: 8px 20px;
+  background: #2380D1;
+}
+
+.sm_header {
+  display: none;
+}
+
+.socialMedia {
+  display: none;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+/* Medium Screens */
+@media ( min-width: 500px ) {
+
+  .sm_header {
+    display: block;
+  }
+
+  .socialMedia {
+    display: block;
+  }
+
+}
+
+/* Larger Screens */
+@media ( min-width: 1000px ) {
+
+}
