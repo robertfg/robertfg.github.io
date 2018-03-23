@@ -15,6 +15,9 @@
 /* *********************************************
   Base Element Styles
 ==================================== */
+/* background on text: rgba with an opacity  255, 255, 255, .3
+text-shadow with white text  */
+
 * {
 	box-sizing: border-box;
 }
@@ -136,14 +139,27 @@ menu:hover .main-nav {
 /* ---- Layout Containers ----
 	-	header, footer, content divs	*/
 header {
-  background: #04387B;
-	color: FloralWhite;
+  color: FloralWhite;
 	padding: .5em;
 }
 
+#index    header {
+  background: #04387B;
+}
+
+#about    header,
+#contact  header {
+  background: linear-gradient(#04387B, #9FC3F7);
+}
+
+#projects header {
+  background: linear-gradient(#04387B, #FBE5E8);
+}
+
 main {
-  background: url('../img/Ohio%20River%20Sunset%20-%20Faded.jpg') 10%;
+  background: url('../img/Ohio-River-Sunset-Faded.jpg') 10%;
   background-color: FloralWhite;
+  background-size: cover;
 }
 
 /* Only the index page has the banner */
@@ -158,7 +174,7 @@ main {
 }
 
 footer {
-  background: linear-gradient(to top, #2380D1, #FDB47D);
+  background: linear-gradient(to top, #2380D1, #424443);
 	color: FloralWhite;
 	padding: 1em;
 	text-align: center;
@@ -179,11 +195,13 @@ footer p {
 #index .primary,
 #projects .primary {
   width: 100%;
+}
+
+#index .primary {
   text-align: center;
 }
 
-#about .primary,
-#projects .primary {
+#about .primary {
   display: none;
 }
 
@@ -198,8 +216,15 @@ footer p {
 
 .secondary ul {
   color: #04387B;
-  /* color: #2380D1; */
   font-weight: bold;
+}
+
+.secondary a {
+  color: #04387B;
+}
+
+.secondary a:hover {
+  border-bottom: 3px solid #04387B;
 }
 
 /* Page Elements */
@@ -302,20 +327,31 @@ footer p {
     min-height: calc(100vh - 121px);  /* header + footer */
   }
 
+  #index footer {
+    background: linear-gradient(to top, #2380D1, #FDB47D);
+  }
+
+  #about footer,
+  #contact footer {
+    background: linear-gradient(to top, #2380D1, #C9B7A3);
+  }
+
   .col {
     display: inline-block;
     padding-top: 1.5em;
   }
 
-  #projects .primary,
+  #about .primary {
+    display: inline-block;
+    text-align: center;
+  }
+
   #about    .primary,
   #contact  .primary {
-    /* display: inline-block; */
     width: 40%;
     padding-top: 3em;
   }
 
-  #projects .secondary,
   #about    .secondary,
   #contact  .secondary {
     width: 60%;
@@ -335,7 +371,7 @@ footer p {
     display: inline;
     width: 65%;
     margin-bottom: .5em;
-    border: 10px solid #FDB47D;
+    border: 10px solid #04387B;
     border-radius: 10%;
   }
 

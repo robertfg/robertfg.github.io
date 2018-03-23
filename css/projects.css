@@ -1,0 +1,51 @@
+/* =================================
+  Project-Specific Formatting
+==================================== */
+.projects {
+  display: inline-block;
+  background-color: #FDB47D;
+  margin: 5%;
+  /* margin-bottom: 5%; */
+  /* width: 75%; */
+  text-align: center;
+  vertical-align: top;
+  border-width: 10px;
+  border-style: double;
+  border-color: #04387B;
+}
+
+.projects h2 {
+  text-align: center;
+  vertical-align: bottom;
+  padding: 5%;
+}
+
+.projects img {
+  width: 100%;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+/* Medium Screens */
+@media ( min-width: 500px ) {
+
+  .projects {
+    margin: 7%;
+    width: 30%;
+    /* width: 200px; */
+  }
+
+}
+
+/* Larger Screens */
+@media ( min-width: 1000px ) {
+
+  .projects {
+    margin: 5%;
+    width: 20%;
+  }
+
+}

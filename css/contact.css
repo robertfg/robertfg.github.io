@@ -5,11 +5,37 @@ form {
   color: #04387B;
   font-weight: bold;
   background: #FDB47D;
+  margin: 5%;
+  margin-left: 0;
+  padding: .5em;
+  border: 5px solid #04387B;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  margin-bottom: .5em;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
 }
 
 button {
+  display: block;
   padding: 8px 20px;
   background: #2380D1;
+}
+
+.secondary {
+  padding-top: 3em;
 }
 
 .sm_header {
@@ -27,17 +53,32 @@ button {
 /* Medium Screens */
 @media ( min-width: 500px ) {
 
+  form {
+    padding-left: 10%;
+  }
+
+  main h1 {
+    vertical-align: top;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+
   .sm_header {
     display: block;
+    text-align: center;
+    vertical-align: top;
   }
 
   .socialMedia {
     display: block;
   }
 
-}
-
-/* Larger Screens */
-@media ( min-width: 1000px ) {
+  .socialMedia a {
+    display: block;
+    text-align: center;
+  }
 
 }
