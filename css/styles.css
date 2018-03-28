@@ -48,7 +48,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #FDB47D;
   padding-bottom: .25em;
   border-bottom: 3px solid #FDB47D;
@@ -84,7 +85,8 @@ menu {
   margin-left: .5em;
 }
 
-.name a:hover {
+.name a:hover,
+.name a:focus {
 	color: #FDB47D;
   padding-bottom: .25em;
   border-bottom: 3px solid #FDB47D;
@@ -132,7 +134,8 @@ menu {
   margin: .2em 0;
 }
 
-menu:hover .main-nav {
+menu:hover .main-nav,
+menu:focus .main-nav {
   display: block;
 }
 
@@ -192,16 +195,16 @@ footer p {
   padding: .5em 1em;
 }
 
-#index .primary,
+#index    .primary,
 #projects .primary {
   width: 100%;
 }
 
-#index .primary {
+#index    .primary {
   text-align: center;
 }
 
-#about .primary {
+#about    .primary {
   display: none;
 }
 
@@ -223,7 +226,8 @@ footer p {
   color: #04387B;
 }
 
-.secondary a:hover {
+.secondary a:hover,
+.secondary a:focus {
   border-bottom: 3px solid #04387B;
 }
 
@@ -248,7 +252,8 @@ footer p {
   display: none;
 }
 
-.socialMedia a:hover {
+.socialMedia a:hover,
+.socialMedia a:focus {
   border-bottom: 0;
 }
 
@@ -271,7 +276,7 @@ footer p {
   Media Queries
 ==================================== */
 
-/* Medium Screens */
+/* ******************** Medium Screens ******************** */
 @media ( min-width: 500px ) {
 
   /* Base Elements */
@@ -341,9 +346,11 @@ footer p {
     padding-top: 1.5em;
   }
 
-  #about .primary {
+  #about    .primary {
     display: inline-block;
     text-align: center;
+    width: 40%;
+    padding-top: 3em;
   }
 
   #about    .primary,
@@ -390,7 +397,7 @@ footer p {
 
 }
 
-/* Larger Screens */
+/* ******************** Larger Screens ******************** */
 @media ( min-width: 1000px ) {
 
   /* Base Elements */
@@ -427,6 +434,23 @@ footer p {
   }
 
   .col {
+    padding-top: 2em;
+  }
+
+  #about .primary {
+    width: 30%;
+  }
+
+  #about .secondary {
+    width: 50%;
+  }
+
+  #about .tertiary {
+    width: 20%;
+  }
+  
+  #contact .primary,
+  #contact .secondary {
     padding-top: 2em;
   }
 

@@ -1,0 +1,38 @@
+[
+  {
+   "skill": "HTML",
+   "level": "advanced"
+  },
+  {
+   "skill": "CSS",
+   "level": "intermediate"
+  },
+  {
+   "skill": "JavaScript",
+   "level": "intermediate"
+  },
+  {
+   "skill": "jQuery",
+   "level": "intermediate"
+  },
+  {
+   "skill": "Bootstrap",
+   "level": "intermediate"
+ },
+ {
+  "skill": "Node.js",
+  "level": "beginner"
+  },
+  {
+   "skill": "Java",
+   "level": "intermediate"
+ },
+  {
+   "skill": "VBA",
+   "level": "advanced"
+ },
+  {
+   "skill": "VBScript",
+   "level": "advanced"
+  }
+]
