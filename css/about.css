@@ -15,12 +15,17 @@
 
   .graph ul {
     list-style-type: none;
-    background: linear-gradient(to right, GreenYellow, DarkGreen);
+    /* background: linear-gradient(to right, GreenYellow, DarkGreen); */
+    background: linear-gradient(to right, #3E9CED, #04387B);
     padding: .5em 1em;
+    /* border: .1em solid #FDB47D; */
+    box-shadow: -.05em -.05em .25em .05em #FDB47D,
+                 .05em  .05em .25em .05em #FDB47D;
   }
 
   .graph li {
     display: inline;
+    font-weight: bold;
     color: FloralWhite;
   }
 
@@ -38,23 +43,26 @@
   }
 
   #skills li {
-    margin: .5em 0;
-    padding: .3em;
-    color: FloralWhite;
     text-align: center;
     font-size: .9em;
+    color: FloralWhite;
+    margin: .5em 0;
+    padding: .3em;
+    /* border: .1em solid #FDB47D; */
+    box-shadow: -.05em -.05em .25em .05em #FDB47D,
+                 .05em  .05em .25em .05em #FDB47D;
   }
 
   .beginner {
-    background-color: #81D823;
+    background-color: #3E9CED;
   }
 
   .intermediate {
-    background-color: #4AA614;
+    background-color: #1D64AD;
   }
 
   .advanced {
-    background-color: #026600;
+    background-color: #04387B;
   }
 
 }

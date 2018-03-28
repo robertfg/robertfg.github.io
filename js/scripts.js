@@ -3,7 +3,7 @@
 ================================= === */
 const header = document.getElementsByTagName('header');
 header[0].innerHTML = `
-  <h1 class="name"><a href="index.html">Robert Glover</a></h1>
+  <h1 id="name"><a href="index.html">Robert Glover</a></h1>
   <menu>
     <div id="hamburger_menu"><span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span></div>
     <ul class="main-nav">

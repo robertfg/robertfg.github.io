@@ -25,14 +25,20 @@ text-shadow with white text  */
 h1 {
 	font-family: CelticHand, Garamond, serif;
 	font-size: 1.6em;
-  color: FloralWhite;
-  /* color: #04387B; */
+  /* color: FloralWhite; */
+  /* text-shadow: .1em .1em .1em #04387B; */
+  /* background: rgba(255, 255, 255, .3); */
+  color: #04387B;
+  text-shadow: .05em .05em .05em FloralWhite;
 }
 
 h2 {
 	font-family: CelticHand, Garamond, serif;
 	font-size: 1.3em;
+  /* color: FloralWhite;
+  text-shadow: .1em .1em .1em #04387B; */
   color: #04387B;
+  text-shadow: .05em .05em .05em FloralWhite;
 }
 
 p {
@@ -40,7 +46,10 @@ p {
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5em;
+  /* color: FloralWhite;
+  text-shadow: .1em .1em .1em #04387B; */
   color: #04387B;
+  text-shadow: .05em .05em .05em FloralWhite;
 }
 
 a {
@@ -75,25 +84,23 @@ ul.main-nav {
   vertical-align: middle;
 }
 
-.name,
-menu {
+#name {
   display: inline-block;
-}
-
-.name {
   font-family: Helvetica, sans-serif;
   font-size: 1em;
   margin-left: .5em;
+  text-shadow: none;
 }
 
-.name a:hover,
-.name a:focus {
+#name a:hover,
+#name a:focus {
 	color: #FDB47D;
   padding-bottom: .25em;
   border-bottom: 3px solid #FDB47D;
 }
 
 menu {
+  display: inline-block;
   position: absolute;
   top: 1.2em;
   right: 1em;
@@ -189,6 +196,7 @@ footer p {
   font-size: .9em;
   font-weight: normal;
   line-height: 0;
+  text-shadow: none;
 }
 
 .col {
@@ -238,6 +246,9 @@ footer p {
   padding: 0;
 }
 
+.abilities {
+  text-shadow: .05em .05em .05em FloralWhite;
+}
 /* Page Elements */
 .banner {
   background: linear-gradient(#04387B, #877E7F);
@@ -296,7 +307,7 @@ footer p {
   }
 
   /* Navigation */
-  .name {
+  #name {
     font-size: 1.1em;
     margin-left: .5em;
   }
@@ -314,7 +325,7 @@ footer p {
     text-transform: uppercase;
   }
 
-  .name,
+  #name,
   menu,
   .main-nav,
   .main-nav li {
@@ -422,7 +433,7 @@ footer p {
   }
 
   /* Navigation */
-  .name {
+  #name {
     font-size: 1.25em;
   }
 
