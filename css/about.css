@@ -1,0 +1,60 @@
+/* =================================
+  Skills Widget Formatting
+==================================== */
+
+/* ******************** Larger Screens ******************** */
+@media ( min-width: 1000px ) {
+
+  .tertiary {
+    display: block;
+  }
+
+  .graph {
+    width: 80%;
+  }
+
+  .graph ul {
+    list-style-type: none;
+    background: linear-gradient(to right, GreenYellow, DarkGreen);
+    padding: .5em 1em;
+  }
+
+  .graph li {
+    display: inline;
+    color: FloralWhite;
+  }
+
+  #ten {
+    float: right;
+  }
+
+  #skills {
+    width: 40%;
+  }
+
+  #skills ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  #skills li {
+    margin: .5em 0;
+    padding: .3em;
+    color: FloralWhite;
+    text-align: center;
+    font-size: .9em;
+  }
+
+  .beginner {
+    background-color: #81D823;
+  }
+
+  .intermediate {
+    background-color: #4AA614;
+  }
+
+  .advanced {
+    background-color: #026600;
+  }
+
+}

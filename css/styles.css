@@ -231,6 +231,12 @@ footer p {
   border-bottom: 3px solid #04387B;
 }
 
+.tertiary {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Page Elements */
 .banner {
   background: linear-gradient(#04387B, #877E7F);
@@ -356,12 +362,17 @@ footer p {
   #about    .primary,
   #contact  .primary {
     width: 40%;
-    padding-top: 3em;
+    padding-top: 2em;
   }
 
   #about    .secondary,
   #contact  .secondary {
     width: 60%;
+    padding-top: 2em;
+  }
+
+  .tertiary {
+    display: none;
   }
 
   /* Page Elements */
@@ -376,7 +387,7 @@ footer p {
 
   .pic2 {
     display: inline;
-    width: 65%;
+    width: 80%;
     margin-bottom: .5em;
     border: 10px solid #04387B;
     border-radius: 10%;
@@ -434,7 +445,7 @@ footer p {
   }
 
   .col {
-    padding-top: 2em;
+    padding-top: 1em;
   }
 
   #about .primary {
@@ -448,10 +459,10 @@ footer p {
   #about .tertiary {
     width: 20%;
   }
-  
+
   #contact .primary,
   #contact .secondary {
-    padding-top: 2em;
+    padding-top: 1em;
   }
 
   /* Page Elements */

@@ -16,11 +16,11 @@ xhr.onreadystatechange = () => {
     // Loop for employees
     for ( let i = 0; i < skills.length; i++ ) {
       if ( skills[i].level === "beginner" ) {
-        statusHTML += '<li>';
+        statusHTML += '<li class="beginner">';
       } else if ( skills[i].level === "intermediate" ) {
-        statusHTML += '<li>';
+        statusHTML += '<li class="intermediate">';
       } else {
-        statusHTML += '<li>';
+        statusHTML += '<li class="advanced">';
       }
       statusHTML += skills[i].skill;
       statusHTML += '</li>';
