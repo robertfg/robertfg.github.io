@@ -25,7 +25,8 @@ text-shadow with white text  */
 h1 {
 	font-family: CelticHand, Garamond, serif;
 	font-size: 1.6em;
-  color: #04387B;
+  color: FloralWhite;
+  /* color: #04387B; */
 }
 
 h2 {
