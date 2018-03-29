@@ -8,8 +8,8 @@
 1. Clone repository.
 2. Change directory to root of project, i.e., where index.html resides.
 3. Type "http-server . -o" to run project.
-  a. This command runs npm's simple command-line http server and opens a browser window to the index.html page.
-  b. You can install http-server by first installing node.js, which installs npm, then using npm to install http-server. 
+  1. This command runs npm's simple command-line http server and opens a browser window to the index.html page.
+  2. You can install http-server by first installing node.js, which installs npm, then using npm to install http-server. 
 
 #### The project will still run without AJAX just by double-clicking index.html.  However, there is an AJAX widget on the "About" page that will not appear.
 
