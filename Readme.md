@@ -1,7 +1,7 @@
-# Portfolio / Projects Websits
+# Portfolio / Projects Website
 
-### Robert Glover
-### March 2018
+#### Robert Glover
+####  March 2018
 
 ## Instructions
 
