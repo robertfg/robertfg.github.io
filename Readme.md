@@ -38,6 +38,8 @@ The class(es) I created are:
 1. .main-nav: formats main navigation bar, e.g., color, list style (no bullets), absolute position at right side of screen, padding, and box shadow.
 2. #index: one of four id tags, each one of which links to the body tag of each of the four pages.  The purpose is to uniquely identify each page, so that I could extract the header from the html and create it dynamically using JavaScript.  There is some formatting, e.g., background color or linear gradient.
 3. .col: the column class floats columns to the left and assigns a padding.
+4. .primary, .secondary., .tertiary: each class represents a column within the .col class div.  Typically, these classes have a width attribute.  Often, display is set to none for smaller widths.
+5. .banner: on the Home page, there is a banner that specifies a background linear gradient, a height, and a bottom padding.  The text alignment is set to center, vertical alignment to middle.
 
 ## Custom JavaScript Functions
 The JavaScript functions I created are:
