@@ -1,5 +1,5 @@
-/* =================================
   Import normalize.css
+  /* =================================
 ==================================== */
 @import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
 /* @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'); */
@@ -15,8 +15,6 @@
 /* *********************************************
   Base Element Styles
 ==================================== */
-/* background on text: rgba with an opacity  255, 255, 255, .3
-text-shadow with white text  */
 
 * {
 	box-sizing: border-box;
