@@ -16,23 +16,25 @@ function buildOutput(obj) {
   // out += '</div>';
   // return out;
 
-  // Changed the above:
-  return `<div class="projects">
+  // Refactored above:
+  // return `<div class="projects">
+  //   <a href="${obj.url}" target="_blank">
+  //     <img src="${obj.img}" alt="${obj.title}">
+  //     <h2>${obj.title}</h2>
+  //   </a>
+  // </div>`;
+
+  // This works well: crops image, pads header.
+  return `<div class="outer-projects">
     <a href="${obj.url}" target="_blank">
-      <img src="${obj.img}" alt="${obj.title}">
-      <h2>${obj.title}</h2>
+      <div class="crop-projects">
+        <img src="${obj.img}" alt="${obj.title}">
+      </div>
+      <div class="header-projects">
+        <h2>${obj.title}</h2>
+      </div>
     </a>
   </div>`;
-
-  // Doesn't work the way I'd like it to:
-  // return `<div class="projects">
-  //   <div class="proj-pics">
-  //     <a href="${obj.url}" target="_blank">
-  //       <img src="${obj.img}" alt="${obj.title}">
-  //       <h2>${obj.title}</h2>
-  //     </a>
-  //   </div>
-  // </div>`;
 }
 
 // load up array

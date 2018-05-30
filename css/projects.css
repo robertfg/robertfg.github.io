@@ -1,7 +1,7 @@
 /* =================================
   Project-Specific Formatting
 ==================================== */
-.projects {
+.outer-projects {
   display: inline-block;
   background-color: #FDB47D;
   margin: 5%;
@@ -13,22 +13,22 @@
   border-style: double;
   border-color: #04387B;
   min-height: 350px;
+  max-width: 300px;
 }
 
 /* I tried to crop the pics: cropping worked, but overall effect didn't */
-/* .proj-pics {
+.crop-projects {
   max-height: 250px;
   overflow: hidden;
-} */
-
-.projects h2 {
-  text-align: center;
-  vertical-align: bottom;
-  padding: 5%;
 }
 
-.projects img {
-  max-height: 250px;
+.header-projects {
+  vertical-align: bottom;
+  text-align: center;
+  margin: 5%;
+}
+
+.crop-projects img {
   width: 100%;
 }
 
@@ -40,9 +40,9 @@
 /* Medium Screens */
 @media ( min-width: 500px ) {
 
-  .projects {
+  .outer-projects {
     margin: 7%;
-    width: 30%;
+    max-width: 30%;
     /* width: 200px; */
   }
 
@@ -51,9 +51,9 @@
 /* Larger Screens */
 @media ( min-width: 1000px ) {
 
-  .projects {
+  .outer-projects {
     margin: 5%;
-    width: 20%;
+    max-width: 20%;
   }
 
 }
