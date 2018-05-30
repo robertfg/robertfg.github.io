@@ -12,7 +12,14 @@
   border-width: 10px;
   border-style: double;
   border-color: #04387B;
+  min-height: 350px;
 }
+
+/* I tried to crop the pics: cropping worked, but overall effect didn't */
+/* .proj-pics {
+  max-height: 250px;
+  overflow: hidden;
+} */
 
 .projects h2 {
   text-align: center;
@@ -21,6 +28,7 @@
 }
 
 .projects img {
+  max-height: 250px;
   width: 100%;
 }
 

@@ -6,16 +6,33 @@ var output;
 
 // Funcion to build string
 function buildOutput(obj) {
-  let out = '<div class="projects">';
-  out += `
+  // let out = '<div class="projects">';
+  // out += `
+  //   <a href="${obj.url}" target="_blank">
+  //     <img src="${obj.img}" alt="${obj.title}">
+  //     <h2>${obj.title}</h2>
+  //   </a>
+  // `;
+  // out += '</div>';
+  // return out;
+
+  // Changed the above:
+  return `<div class="projects">
     <a href="${obj.url}" target="_blank">
       <img src="${obj.img}" alt="${obj.title}">
       <h2>${obj.title}</h2>
     </a>
-  `;
-  out += '</div>';
+  </div>`;
 
-  return out;
+  // Doesn't work the way I'd like it to:
+  // return `<div class="projects">
+  //   <div class="proj-pics">
+  //     <a href="${obj.url}" target="_blank">
+  //       <img src="${obj.img}" alt="${obj.title}">
+  //       <h2>${obj.title}</h2>
+  //     </a>
+  //   </div>
+  // </div>`;
 }
 
 // load up array
